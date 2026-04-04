@@ -35,9 +35,9 @@ languages:
 
 | Workflow | Description |
 |----------|-------------|
-| **cjl-paper-flow** | ljg-paper → ljl-card: Read paper + make card in one go. |
-| **cjl-word-flow** | ljg-word → ljl-card: Deep word analysis + infographic card in one go. |
-| **cjl-travel** | Research → ContentAnalysis → ljl-card: City civilization research + org document + portable card in one go. |
+| **cjl-paper-flow** | cjl-paper → cjl-card: Read paper + make card in one go. |
+| **cjl-word-flow** | cjl-word → cjl-card: Deep word analysis + infographic card in one go. |
+| **cjl-travel** | Research → ContentAnalysis → cjl-card: City civilization research + org document + portable card in one go. |
 
 ---
 

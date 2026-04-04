@@ -35,9 +35,9 @@ languages:
 
 | 工作流 | 说明 |
 |--------|------|
-| **cjl-paper-flow** | ljg-paper → ljl-card：读论文 + 做卡片一气呵成。 |
-| **cjl-word-flow** | ljg-word → ljl-card：单词深度分析 + 信息图卡片一气呵成。 |
-| **cjl-travel** | Research → ContentAnalysis → ljl-card：城市文明研究 + org 文档 + 便携卡片一气呵成。 |
+| **cjl-paper-flow** | cjl-paper → cjl-card：读论文 + 做卡片一气呵成。 |
+| **cjl-word-flow** | cjl-word → cjl-card：单词深度分析 + 信息图卡片一气呵成。 |
+| **cjl-travel** | Research → ContentAnalysis → cjl-card：城市文明研究 + org 文档 + 便携卡片一气呵成。 |
 
 ---
 

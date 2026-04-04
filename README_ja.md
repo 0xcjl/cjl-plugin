@@ -35,9 +35,9 @@ languages:
 
 | ワークフロー | 説明 |
 |--------------|------|
-| **cjl-paper-flow** | ljg-paper → ljl-card：論文読んで + カード作るを一気呵成。 |
-| **cjl-word-flow** | ljg-word → ljl-card：単語の深度分析 + 情報グラフィックカードを一人で完成。 |
-| **cjl-travel** | Research → ContentAnalysis → ljl-card：都市文明研究 + orgドキュメント + 携带カードを一人で完成。 |
+| **cjl-paper-flow** | cjl-paper → cjl-card：論文読んで + カード作るを一気呵成。 |
+| **cjl-word-flow** | cjl-word → cjl-card：単語の深度分析 + 情報グラフィックカードを一人で完成。 |
+| **cjl-travel** | Research → ContentAnalysis → cjl-card：都市文明研究 + orgドキュメント + 携带カードを一人で完成。 |
 
 ---
 
