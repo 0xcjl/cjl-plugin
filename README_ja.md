@@ -7,50 +7,43 @@ languages:
 
 # CJL スキルコレクション
 
-研究、コンテンツ制作、プレゼンテーション設計、ワークフロー自動化 위한 17 のプロダクション対応スキルを備えた个人用 Claude Code プラグイン。
-
-**English** | [简体中文](./README_zh.md) | [日本語](./README_ja.md)
+[English](./README.md) · [简体中文](./README_zh.md) · [日本語](./README_ja.md)
 
 ---
 
 ## スキル一覧
 
-| スキル | コマンド | 説明 |
-|--------|----------|------|
-| `cjl-card` | `/cjl-card` | コンテンツ → PNG ビジュアル（ロングカード、情報グラフィック、ポスター） |
-| `cjl-paper` | `/cjl-paper` | 学術論文分析パイプライン |
-| `cjl-paper-flow` | `/cjl-paper-flow` | 論文分析 + PNG カード ワークフロー |
-| `cjl-paper-river` | `/cjl-paper-river` | 学術論文の系譜図 / 引用追跡 |
-| `cjl-plain` | `/cjl-plain` | プレーンバゲージライター |
-| `cjl-rank` | `/cjl-rank` | 次元削減分析 |
-| `cjl-relationship` | `/cjl-relationship` | 関係性分析 |
-| `cjl-roundtable` | `/cjl-roundtable` | マルチパースペクティブ円卓討議 |
-| `cjl-skill-map` | `/cjl-skill-map` | インストール済みスキル可視化マップ |
-| `cjl-travel` | `/cjl-travel` | 都市旅行研究ワークフロー |
-| `cjl-word` | `/cjl-word` | 語源を含む英単語深掘り |
-| `cjl-word-flow` | `/cjl-word-flow` | 単語分析 → 情報graphicカード |
-| `cjl-writes` | `/cjl-writes` | アイデア整理のためのライティングエンジン |
-| `cjl-x-download` | `/cjl-x-download` | X/Twitter メディアダウンローダー |
-| `cjl-learn` | `/cjl-learn` | コンセプト解剖と学習 |
-| `cjl-invest` | `/cjl-invest` | 投資調査と分析 |
-| `cjl-slides` | `/cjl-slides` | 24 種類の国際デザインスタイルによる HTML プレゼンテーション |
+| スキル | 説明 |
+|--------|------|
+| **cjl-card** | **ビジュアルカード生成**：コンテンツをPNGビジュアルカード（長尺画像、情報グラフィック、ポスター）に変換。情報グラフィックモードはコンテンツ密度、構造、气氛に基づいてユニークな構図を自動生成。固定テンプレートなし、形式はコンテンツに奉仕する。 |
+| **cjl-learn** | **コンセプト解剖**：8つの角度からコンセプトを切り込む（歴史、弁証法、現象、语言、形式、存在、美学、メタリフレクション）。最後に一句の洞察に压缩。出力：org-modeファイル。 |
+| **cjl-paper** | **論文リーダー**：非学術者のために論文のアイデアを抽出。理解重視、批評重視ではない。 |
+| **cjl-plain** | **平易語エンジン**：あらゆるコンテンツを頭のいい12歳でも理解できるレベルに書き換える。 |
+| **cjl-rank** | **次元低減エンジン**：ある領域に対して、それを本当に支えているいくつかの独立した力を找出。現象をこれ以上削れない最小段階まで削り、その根元から各現象を再生できることが初めて正しいとする生成器。 |
+| **cjl-x-download** | **Xメディアダウンローダー**：X/Twitter投稿の画像と動画を~/Downloadsにダウンロード。 |
+| **cjl-skill-map** | **スキルマップ**：インストール済みスキルをスキャンし、可視化の全景をレンダリング。 |
+| **cjl-word** | **英単語マスター**：英単語の核となる意味と「なるほど」瞬間を深く解剖。 |
+| **cjl-writes** | **ライティングエンジン**：一つの观点から出発し、書きながら考えを突き詰める。 |
+| **cjl-roundtable** | **ラウンドテーブル**：真を求める構造化多人弁証法的対話フレームワーク。主持人が歴史上または現代の人物を導き、複数の深い交锋を経由、各ラウンドでASCII思考フレームワークを生成し、最終的に知識ネットワークを出力。 |
+| **cjl-travel** | **旅行研究**：都市名を入力すると、深度文化研究ドキュメント（org-mode）+ 携带カード（PNG）を自動生成。歴史階層、博物館の重点、古代建築の見所、考古学的発見をカバー。方法論は考古学の机上研究（DBA）を借鉴。 |
+| **cjl-invest** | **投資研究**：探索予定。 |
+| **cjl-slides** | **HTMLプレゼンテーション**：24種類の国際 デザイン スタイルのHTMLスライドを生成し、PPTXにエクスポート可能。 |
+| **cjl-relationship** | **関係マップ**：探索予定。 |
+| **cjl-paper-river** | **ペーパー・リバー**：探索予定。 |
+
+## ワークフロー一覧
+
+| ワークフロー | 説明 |
+|--------------|------|
+| **cjl-paper-flow** | ljg-paper → ljl-card：論文読んで + カード作るを一気呵成。 |
+| **cjl-word-flow** | ljg-word → ljl-card：単語の深度分析 + 情報グラフィックカードを一人で完成。 |
+| **cjl-travel** | Research → ContentAnalysis → ljl-card：都市文明研究 + orgドキュメント + 携带カードを一人で完成。 |
 
 ---
 
-## デザインの理念
+## インストール方法
 
-各スキルは以下の原則に従います：
-
-- **アトミック**: 1 スキル、1 責任
-- **観察可能**: 明確な入力 → 出力契約
-- **自己完結型**: 外部状態依存なし
-- **ユーザー起動可能**: `/スキル名` または自然言語で起動
-
----
-
-## 使用方法
-
-### プラグインインストール
+### プラグイン方式（推奨）
 
 ```bash
 /install-plugin https://github.com/0xcjl/cjl-plugin
@@ -59,25 +52,45 @@ languages:
 ### 手動インストール
 
 ```bash
-git clone https://github.com/0xcjl/cjl-plugin ~/.claude/plugins/cjl-plugin
+git clone https://github.com/0xcjl/cjl-plugin.git ~/.claude/plugins/cjl-plugin
 ```
 
 ---
 
-## 依存関係
+## 使用方法
 
-| スキル | 依存関係 | インストール |
-|--------|----------|-------------|
-| `cjl-card` | Node.js + Playwright | [cjl-card docs](https://github.com/0xcjl/cjl-plugin/tree/main/skills/cjl-card) を参照 |
+任意のスキルを激活：
+
+```
+/cjl-card [コンテンツ]
+/cjl-paper [論文内容]
+/cjl-slides [テーマ]
+/cjl-travel [都市名]
+...
+```
 
 ---
 
-## クレジット
+## 設計思想
 
-[lijigang/ljg-skills](https://github.com/lijigang/ljg-skills) から改编。スキル名の変更（`ljg-` → `cjl-`）を実施し、`cjl-slides` を新規追加。
+各スキルは特定の認知シーンを中心に設計：
+
+- **情報変換型**（card、slides）：抽象コンテンツを直感的な視覚形式に変換
+- **理解深化型**（paper、learn、word）：非専門家がコアコンセプトを素早く習得を支援
+- **構造探索性**（rank、roundtable）：複雑な現象を複数の角度から解読
+- **ワークフロー型**（paper-flow、word-flow、travel）：複数のスキルを連携させ、复杂なタスクを 하나의コマンドで完成
 
 ---
 
-## ライセンス
+## 参考
 
-MIT
+本プラグインコレクションのベース構造は [lijigang/ljg-skills](https://github.com/lijigang/ljg-skills) を参考にしています。
+
+---
+
+## 更改履歴
+
+### v1.0.0
+
+- 初期バージョン
+- 17スキル + 3ワークフロー

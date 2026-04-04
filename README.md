@@ -7,96 +7,90 @@ languages:
 
 # CJL Skills Collection
 
-A personal Claude Code plugin providing 17 production-ready skills for research, content creation, presentation design, and workflow automation.
-
-**English** | [简体中文](./README_zh.md) | [日本語](./README_ja.md)
+[English](./README.md) · [简体中文](./README_zh.md) · [日本語](./README_ja.md)
 
 ---
 
-## Skills
+## Skills Overview
 
-| Skill | Command | Description |
-|-------|---------|-------------|
-| `cjl-card` | `/cjl-card` | Content → PNG visuals (long cards, infographics, posters) |
-| `cjl-paper` | `/cjl-paper` | Academic paper analysis pipeline |
-| `cjl-paper-flow` | `/cjl-paper-flow` | Paper workflow (paper analysis + PNG card) |
-| `cjl-paper-river` | `/cjl-paper-river` | Academic paper genealogy / citation tracing |
-| `cjl-plain` | `/cjl-plain` | Plain language rewriter |
-| `cjl-rank` | `/cjl-rank` | Dimensional reduction analysis |
-| `cjl-relationship` | `/cjl-relationship` | Relationship analysis |
-| `cjl-roundtable` | `/cjl-roundtable` | Multi-perspective roundtable discussion |
-| `cjl-skill-map` | `/cjl-skill-map` | Visual overview of all installed skills |
-| `cjl-travel` | `/cjl-travel` | City travel research workflow |
-| `cjl-word` | `/cjl-word` | English word deep-dive with etymology |
-| `cjl-word-flow` | `/cjl-word-flow` | Word analysis → infographic card |
-| `cjl-writes` | `/cjl-writes` | Writing engine for thinking through ideas |
-| `cjl-x-download` | `/cjl-x-download` | X/Twitter media downloader |
-| `cjl-learn` | `/cjl-learn` | Concept dissection and learning |
-| `cjl-invest` | `/cjl-invest` | Investment research and analysis |
-| `cjl-slides` | `/cjl-slides` | HTML presentations in 24 international design styles |
+| Skill | Description |
+|-------|-------------|
+| **cjl-card** | **Visual Card Generator**: Transform content into PNG visual cards (long-form images, infographics, posters). The infographic mode auto-generates unique compositions based on content density, structure, and tone—no fixed templates, form serves content. |
+| **cjl-learn** | **Concept Dissection**: Dissect a concept from 8 angles (history, dialectics, phenomenon, language, form, existence, aesthetics, meta-reflection), compress into a single epiphany. Output: org-mode file. |
+| **cjl-paper** | **Paper Reader**: Extract ideas from academic papers for non-academics. Emphasis on understanding, not critique. |
+| **cjl-plain** | **Plain Language Engine**: Rewrite any content to a level a smart 12-year-old can understand. |
+| **cjl-rank** | **Dimension Reducer**: For a given domain, identify the few independent forces that truly hold it up. A generator that strips phenomena to the irreducible minimum—and can regenerate every phenomenon from those roots. |
+| **cjl-x-download** | **X Media Downloader**: Download images and videos from X/Twitter posts to ~/Downloads. |
+| **cjl-skill-map** | **Skill Map**: Scan all installed skills and render a visual overview. |
+| **cjl-word** | **Word Mastery**: Deep dissection of a word's core semantics and "aha" moment. |
+| **cjl-writes** | **Writing Engine**: Start with a point of view, think it through in the act of writing. |
+| **cjl-roundtable** | **Roundtable Discussion**: Truth-seeking structured multi-person dialectical dialogue framework. Host guides real historical/contemporary figures through multiple rounds of deep交锋, each round generating an ASCII thinking framework, outputting a knowledge network. |
+| **cjl-travel** | **Travel Research**: Input a city name, auto-generate deep cultural research document (org-mode) + portable cards (PNG). Covers historical layers, museum highlights, ancient architecture, archaeological findings. Methodology draws from archaeological desk research (DBA). |
+| **cjl-invest** | **Investment Research**: To be explored. |
+| **cjl-slides** | **HTML Presentations**: Generate HTML slides in 24 international design styles, exportable to PPTX. |
+| **cjl-relationship** | **Relationship Graph**: To be explored. |
+| **cjl-paper-river** | **Paper River**: To be explored. |
+
+## Workflows Overview
+
+| Workflow | Description |
+|----------|-------------|
+| **cjl-paper-flow** | ljg-paper → ljl-card: Read paper + make card in one go. |
+| **cjl-word-flow** | ljg-word → ljl-card: Deep word analysis + infographic card in one go. |
+| **cjl-travel** | Research → ContentAnalysis → ljl-card: City civilization research + org document + portable card in one go. |
 
 ---
 
-## Design Philosophy
+## Installation
 
-Each skill follows these principles:
+### Plugin (Recommended)
 
-- **Atomic**: One skill, one responsibility
-- **Observable**: Clear input → output contract
-- **Self-contained**: No external state dependencies
-- **User-invocable**: Triggered via `/skill-name` or natural language
+```bash
+/install-plugin https://github.com/0xcjl/cjl-plugin
+```
+
+### Manual
+
+```bash
+git clone https://github.com/0xcjl/cjl-plugin.git ~/.claude/plugins/cjl-plugin
+```
 
 ---
 
 ## Usage
 
-### Install via Plugin
-
-If your Claude Code supports plugin installation from GitHub:
+Activate any skill:
 
 ```
-/install-plugin https://github.com/0xcjl/cjl-plugin
-```
-
-### Manual Install
-
-```bash
-# Clone the repository
-git clone https://github.com/0xcjl/cjl-plugin ~/.claude/plugins/cjl-plugin
-
-# Skills will be available under ~/.claude/plugins/cjl-plugin/skills/
-```
-
-### Activate a Skill
-
-```
-/cjl-paper
-/cjl-slides
-/cjl-card
+/cjl-card [content]
+/cjl-paper [paper content]
+/cjl-slides [topic]
+/cjl-travel [city name]
+...
 ```
 
 ---
 
-## Dependencies
+## Design Philosophy
 
-| Skill | Dependency |
-|-------|-----------|
-| `cjl-card` | Node.js + Playwright |
+Each skill is designed around a specific cognitive scenario:
 
----
-
-## Development
-
-See [CLAUDE.md](./CLAUDE.md) for development guidelines.
+- **Information transformation** (card, slides): Convert abstract content into intuitive visual forms
+- **Understanding deepening** (paper, learn, word): Help non-experts quickly grasp core concepts
+- **Structure exploration** (rank, roundtable): Deconstruct complex phenomena from multiple angles
+- **Workflow** (paper-flow, word-flow, travel): Chain multiple skills to complete complex tasks in one command
 
 ---
 
 ## Credits
 
-Skills in this collection are adapted from [lijigang/ljg-skills](https://github.com/lijigang/ljg-skills), with skill renaming (`ljg-` → `cjl-`) and the addition of `cjl-slides`.
+The base structure of this plugin collection is inspired by [lijigang/ljg-skills](https://github.com/lijigang/ljg-skills).
 
 ---
 
-## License
+## Changelog
 
-MIT
+### v1.0.0
+
+- Initial release
+- 17 skills + 3 workflows
