@@ -8,4 +8,5 @@
 !.claude-plugin/**
 !README*.md
 !CLAUDE.md
+!SKILL.md
 !.gitignore
