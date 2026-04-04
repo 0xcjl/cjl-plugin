@@ -1,13 +1,11 @@
-# Claude Code skills — only track SKILL.md files
-# Ignore everything else by default
-
-# By default, ignore all files
+# Ignore all files by default
 *
 
-# But always track these
+# Always track these
 !skills/
+!skills/**
 !.claude-plugin/
+!.claude-plugin/**
 !README*.md
 !CLAUDE.md
 !.gitignore
-!.claude-plugin/**
