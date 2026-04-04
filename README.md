@@ -79,9 +79,9 @@ git clone https://github.com/0xcjl/cjl-plugin ~/.claude/plugins/cjl-plugin
 
 ## Dependencies
 
-| Skill | Dependency | Install |
-|-------|-----------|---------|
-| `cjl-card` | Node.js + Playwright | See [ljg-card docs](https://github.com/0xcjl/cjl-plugin/tree/main/skills/cjl-card) |
+| Skill | Dependency |
+|-------|-----------|
+| `cjl-card` | Node.js + Playwright |
 
 ---
 
