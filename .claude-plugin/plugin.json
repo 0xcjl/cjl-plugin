@@ -1,36 +1,8 @@
 {
   "name": "cjl-plugin",
-  "displayName": "CJL Skills Collection",
   "description": "Personal Claude Code skills collection: paper reading, content creation, presentation design, writing workflows, and more.",
   "version": "1.0.0",
-  "owner": {
-    "name": "0xcjl",
-    "url": "https://github.com/0xcjl"
-  },
   "repository": "https://github.com/0xcjl/cjl-plugin",
   "license": "MIT",
-  "keywords": [
-    "claude-code",
-    "skills",
-    "paper-reading",
-    "presentation",
-    "content-creation",
-    "writing",
-    "workflow",
-    "productivity"
-  ],
-  "categories": [
-    "Productivity",
-    "Research",
-    "Content Creation",
-    "Design"
-  ],
-  "plugins": [
-    {
-      "name": "cjl-skills",
-      "description": "CJL's personal Claude Code skills collection",
-      "version": "1.0.0",
-      "source": "./skills"
-    }
-  ]
+  "skills": ["./skills/"]
 }
