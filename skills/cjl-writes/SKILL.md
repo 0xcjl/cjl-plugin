@@ -34,7 +34,7 @@ version: "5.1.0"
 #+date:       [{YYYY-MM-DD Day HH:MM}]
 #+filetags:   :write:
 #+identifier: {YYYYMMDDTHHMMSS}
-#+author:     李继刚
+#+author:     Jialin
 ```
 
 文件写入后报告路径。
